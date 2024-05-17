@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Practica_Calificada02</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="ocultar">Ocultar</string>
+    <string name="registrar">Registrar</string>
+    <string name="direcci_n">Dirección</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="productos">Productos</string>
+    <string name="n_mero_cliente">Número cliente</string>
+    <string name="nombre_cliente">Nombre cliente</string>
+    <string name="registro_de_pedidos">Registro de Pedidos</string>
+    <string name="direccion">Dirección</string>
+    <string name="ubicaci_n">Ubicación</string>
+    <string name="producto">Producto</string>
+    <string name="numero_cliente">Número Cliente</string>
+    <string name="name_cliente">Nombre Cliente</string>
+</resources>

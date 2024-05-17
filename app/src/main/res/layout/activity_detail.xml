@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <TextView
+            android:id="@+id/tvNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_cliente"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/ic_nombre_cliente"
+            android:drawablePadding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvNumeroCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_cliente"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/ic_numero_cliente"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/producto"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/ic_producto"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ubicaci_n"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/ic_maps"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/direccion"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/ic_direccion"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutDatos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <ImageButton
+            android:id="@+id/btnPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_llamar"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground"/>
+
+        <ImageButton
+            android:id="@+id/btnUbi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_maps"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground"/>
+
+        <ImageButton
+            android:id="@+id/btnWts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wsp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
